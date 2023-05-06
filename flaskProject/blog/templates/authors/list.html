@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Authors list
+{% endblock %}
+
+{% block body %}
+    <div class="row">
+        <div class="col">
+            <h1>Authors:</h1>
+            <div>
+                {% if authors %}
+                    {% for author in authors %}
+                     ({{ author.id }}) {{ author.user.first_name }} {{ author.user.last_name }}
+                    {% endfor %}
+                {% else %}
+                    <h3>No authors yet</h3>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}
+
