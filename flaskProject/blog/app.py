@@ -28,6 +28,9 @@ def create_app():
     login_manager.init_app(app)
 
     api = init_api(app)
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
+    app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+
 
     return app
 

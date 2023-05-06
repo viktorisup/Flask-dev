@@ -16,9 +16,9 @@ def create_user():
     from blog.models import User
 
     db.session.add(
-        User(first_name='Дмитрий',
-             last_name='Посвянский',
-             email='posv@mail.ru',
+        User(first_name='Viktor',
+             last_name='Isupov',
+             email='isup@mail.ru',
              password=generate_password_hash('1234'))
     )
     db.session.commit()
@@ -40,3 +40,4 @@ def create_init_tags():
         db.session.add(tag)
     db.session.commit()
     print('Done!')
+
