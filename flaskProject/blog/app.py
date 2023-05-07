@@ -28,8 +28,10 @@ def create_app():
     login_manager.init_app(app)
 
     api = init_api(app)
-    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('SQLALCHEMY_DATABASE_URI')
-    app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
+    # SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite'
+    # SECRET_KEY = '5os1pc=tyt0%0(krtl_^v4lj_9r2!3ymv1e_-95y-t5g7hk@q2'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite'
+    app.config['SECRET_KEY'] = '5os1pc=tyt0%0(krtl_^v4lj_9r2!3ymv1e_-95y-t5g7hk@q2'
 
 
     return app

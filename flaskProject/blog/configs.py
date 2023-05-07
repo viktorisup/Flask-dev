@@ -4,9 +4,9 @@ import os
 class BaseConfig(object):
     DEBUG = False
     TESTING = False
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite'
+    # SQLALCHEMY_DATABASE_URI = 'sqlite:///db.sqlite'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = '5os1pc=tyt0%0(krtl_^v4lj_9r2!3ymv1e_-95y-t5g7hk@q2'
+    # SECRET_KEY = '5os1pc=tyt0%0(krtl_^v4lj_9r2!3ymv1e_-95y-t5g7hk@q2'
     WTF_CSRF_ENABLE = True
     FLASK_ADMIN_SWATCH = 'solar'
     OPENAPI_URL_PREFIX = 'api/swagger'
